@@ -10,14 +10,10 @@ const controller = {
         model.init();
         view.init();
 
-
         this.initializeData();
-
-       
     },
     initializeData() {
         console.log("Initializing data from controller");
-
         const isLocalStorage = localStorage.getItem("groceryListAppData");
 
         if (isLocalStorage) {
@@ -28,9 +24,6 @@ const controller = {
             localStorage.setItem("groceryListAppData", JSON.stringify(data));
             model.setNewAppData(data);
         }
-
-       
-        
     }
 
 }
