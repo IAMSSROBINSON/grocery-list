@@ -88,3 +88,7 @@
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-medium);
 }
+
+::placeholder {
+    opacity: 60%;
+}
