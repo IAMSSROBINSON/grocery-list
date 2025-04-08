@@ -27,3 +27,15 @@ A grocery list lets the user add new grocery items to a list of all items create
 - on DOMContentLoaded check local storage for custom data object
 - if object exists then parse and load as data plus paint in the dom
 - if object does not exist then set custom local storage data object
+
+## Layout
+3 main areas:
+- header: logo mark, logotype
+- sidebar: introText, form
+- mainArea: listItemsHeading, list items
+** Take a mobile first approach and expand
+
+## Plan
+- setup basic file structure / mvc
+- setup basic html structure / boilerplate
+- setup basic css structure / normalize
