@@ -9,6 +9,9 @@ const controller = {
         view.init();
 
         this.initializeData();
+
+        const list = model.getList();
+        list.length > 0 ? view.renderList(list) : null;
     },
     initializeData() {
         console.log("Initializing data from controller");

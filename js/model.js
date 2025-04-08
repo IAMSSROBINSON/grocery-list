@@ -14,6 +14,9 @@ const model = {
         this.data = data || this.defaultDataObj;
         console.log("New local storage set");
         console.log("New app data set:", this.data);
+    },
+    getList () {
+        return this.data.itemsList;
     }
 }
 

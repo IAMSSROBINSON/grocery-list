@@ -8,10 +8,16 @@
     margin-bottom: var(--margin-xsmall);
 }
 
-
 .addToListForm {
 
 }
+
+
+/* input placeholder */
+::placeholder {
+    opacity: 60%;
+}
+
 
 /* labels */
 .input-label {
@@ -89,6 +95,3 @@
     font-weight: var(--font-weight-medium);
 }
 
-::placeholder {
-    opacity: 60%;
-}
