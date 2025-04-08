@@ -1,5 +1,6 @@
 @import "./header.css";
 @import "./sidebar.css";
+@import "./form.css";
 
 :root {
     font-size: 62.5%;
@@ -10,7 +11,12 @@
     --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     /* color */
+    --white-cloud: #faf9f9;
+
     --gray-900: #212529;
+    --gray-800: #343a40;
+    --gray-600: #868e96;
+    --gray-500: #adb5bd;
     --gray-300: #dee2e6;
     --gray-200: #e9ecef;
     --gray-100: #f8f9fa;
@@ -34,14 +40,37 @@
     --font-weight-xbold: 800;
     --font-weight-xxbold: 900;
 
+    /* margin */
+    --margin-xxxsmall: 0.4rem;
+    --margin-xxsmall: 0.8rem;
+    --margin-xsmall: 1.2rem;
+    --margin-small: 1.4rem;
+    --margin-medium: 1.6rem;
+    --margin-large: 1.8rem;
+    --margin-xlarge: 2rem;
+    --margin-xxlarge: 2.4rem;
+    --margin-xxxlarge: 3.2rem;
+
     /* padding */
-    --padding-xsmall: 1.2rem;
+    --padding-xsmall: 1.2rem;   
     --padding-small: 1.4rem;
     --padding-medium: 1.6rem;
     --padding-large: 1.8rem;
     --padding-xlarge: 2rem;
     --padding-xxlarge: 2.4rem;
     --padding-xxxlarge: 3.2rem;
+
+    /* gap */
+    --gap-xsmall: 0.4rem;
+    --gap-small: 0.8rem;
+    --gap-medium: 1.2rem;
+    --gap-large: 1.6rem;
+    --gap-xlarge: 2rem;
+    --gap-xxlarge: 2.4rem;
+    --gap-xxxlarge: 2.8rem;
+
+    /* border-radius */
+    --border-radius-small: 4px;
 
 
     /* line-height */

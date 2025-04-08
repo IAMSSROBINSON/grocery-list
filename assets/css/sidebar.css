@@ -1,9 +1,10 @@
 .sidebar-container {
-    background-color: var(--gray-200);
+    /* background-color: var(--gray-200); */
     padding: var(--padding-medium) var(--padding-medium);
 }
 
 .sidebar-introText {
+    /* display: none; */
     font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-small);
 }

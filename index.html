@@ -22,8 +22,57 @@
 
     <section class="sidebar-container">
         <p class="sidebar-introText">
-            Add items to your list with a quick check-off when purchased feature for easy item management.
-        </p>
+Input details to add item to list:</p>
+
+        <form method="#" action="#" class="addToListForm" id="addToListForm">
+
+            <div class="name-input-container">
+                <label for="name-input" class="name-input-label input-label">
+                    Item name
+                </label>
+                <input type="text" id="name-input" name="name-input" placeholder="Lemons" class="name-input input">
+            </div>
+
+            <div class="quantity-and-unit-container">
+                <div class="quantity-container">
+                    <label for="quantity-input-label" class="input-label quantity-input-label">
+                        Quantity
+                    </label>
+                    <input type="number" id="quantity-input" name="quantity-input" placeholder="5" class="quantity-input input">
+                </div>
+
+                <div class="unit-list-container">
+                    <label for="unit-list-input" class="unit-list-input-label input-label">Unit</label>
+
+                    <input list="unit-list" id="unit-list-input" class="unit-list-input input" placeholder=" -">
+
+                    <datalist class="dataList-container" id="unit-list">
+                        <option value=" -"></option>
+                        <option value="Grams (g)"></option>
+                        <option value="Kilograms (kg)"></option>
+                        <option value="Litres (l)"></option>
+                        <option value="Teaspoons (tsp)"></option>
+                        <option value="Tablespoons (tbsp)"></option>
+                        <option value="Cups"></option>
+                        <option value="Ounce (oz)"></option>
+                        <option value="Pounds (lb)"></option>
+                        <option value="Pinch"></option>
+                        <option value="Dash"></option>
+                        <option value="Quart"></option>
+                        <option value="Pint"></option>
+                        <option value="Gallon"></option>
+                        <option value="Piece"></option>
+                        <option value="Slice"></option>
+                        <option value="Can"></option>
+                        <option value="Pack"></option>
+                        <option value="Bunch"></option>
+                    </datalist>
+                </div>
+            </div>
+
+            <input type="submit" class="addToList-button" value="Add To List +">
+           
+        </form>
     </section>
 
     <script src="./js/controller.js"></script>

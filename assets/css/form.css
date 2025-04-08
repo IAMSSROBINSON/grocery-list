@@ -1,0 +1,90 @@
+.addToListForm {
+    margin-top: var(--margin-xlarge);
+    display: flex;
+    flex-direction: column;
+}
+
+.addToListForm div {
+    margin-bottom: var(--margin-xsmall);
+}
+
+
+.addToListForm {
+
+}
+
+/* labels */
+.input-label {
+    font-size: var(--font-size-xxsmall);
+    color: var(--gray-600);
+}
+
+
+/* name input */
+.name-input-label {
+    display: block;
+}
+
+.name-input {
+
+}
+
+.input {
+    width: 100%;
+    margin-top: var(--margin-xxxsmall);
+}
+
+.input, .addToList-button {
+    border-radius: var(--border-radius-small);
+    border: 0.5px solid var(--gray-500);
+    padding: var(--padding-small);
+}
+
+
+/* quantity and input container */
+.quantity-and-unit-container {
+    display: flex;
+    gap: var(--gap-xxlarge);
+    align-items: center;
+}
+
+
+/* quantity input */
+.quantity-container {
+
+}
+
+.quantity-input-label {
+
+}
+
+#quantity-input {
+
+}
+
+.quantity-input {
+}
+
+
+/* unit input */
+.unit-list-container {
+
+}
+
+.unit-list-input-label {
+    display: block;
+}
+
+.unit-list-input {
+    width: 100%;
+}
+
+
+/* addToList-button */
+.addToList-button {
+    width: 100%;
+    background-color: var(--gray-800);
+    color: var(--white-cloud);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-medium);
+}
