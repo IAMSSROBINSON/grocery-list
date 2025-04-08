@@ -1,0 +1,9 @@
+.sidebar-container {
+    background-color: var(--gray-200);
+    padding: var(--padding-medium) var(--padding-medium);
+}
+
+.sidebar-introText {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-medium);
+}

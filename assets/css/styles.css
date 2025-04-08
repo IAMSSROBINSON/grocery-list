@@ -1,4 +1,5 @@
 @import "./header.css";
+@import "./sidebar.css";
 
 :root {
     font-size: 62.5%;
@@ -15,8 +16,23 @@
     --gray-100: #f8f9fa;
 
     /* font-size */
+    --font-size-xxsmall: 1.2rem;
+    --font-size-xsmall: 1.4rem;
+    --font-size-small: 1.6rem;
+    --font-size-medium: 1.8rem;
     --font-size-large: 2rem;
     --font-size-xlarge: 2.2rem;
+
+    /* font-weight */
+    --font-weight-xxsmall: 100;
+    --font-weight-xsmall: 200;
+    --font-weight-small: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi: 600;
+    --font-weight-bold: 700;
+    --font-weight-xbold: 800;
+    --font-weight-xxbold: 900;
 
     /* padding */
     --padding-xsmall: 1.2rem;
