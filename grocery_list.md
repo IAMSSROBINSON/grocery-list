@@ -42,3 +42,28 @@ A grocery list lets the user add new grocery items to a list of all items create
 
 ## Header
 Header will contain a logo, logo will be a link back to homepage. Logo will consist of logoMarkIcon and LogoTypeText
+
+## Data
+When the DOMContent has loaded check for a custom data object: "groceryListApp". If it doesn't exist then set it.
+- perform check in controller on DOMContentLoaded and update model through a method where required.
+  
+```JavaScript
+const groceryListApp = {
+    itemsList: [
+        {
+            id: 00001,
+            name: "Lemon",
+            quantity: 5,
+            unit: "-",
+            isChecked: false,
+        },
+         {
+            id: 00002,
+            name: "Root Beer",
+            quantity: 10,
+            unit: "Cans",
+            isChecked: false,
+        }
+    ],
+}
+```
