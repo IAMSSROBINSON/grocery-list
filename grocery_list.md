@@ -1,0 +1,29 @@
+# Grocery List
+A grocery list lets the user add new grocery items to a list of all items created.
+
+## Must have
+- name input 
+- amount input 
+- unit input 
+- add to list button
+
+## Flow
+- user adds name of item e.g Flour, required entry
+- user adds amount of item e.g. 100, required entry
+- user add unit of item e.g. grams, default "-"
+- user clicks add to list button
+- inputs are validated 
+- if validated, add inputs as list item to list of all items
+- if validation fails inform the user of their failure and do not add item to list
+
+## List item
+- checkbox, purchased(checked, less opacity + strike-through), not purchased(un-checked)
+- name
+- amount
+- unit
+- delete button(removes item from list of items object and from the dom)
+
+## Storage
+- on DOMContentLoaded check local storage for custom data object
+- if object exists then parse and load as data plus paint in the dom
+- if object does not exist then set custom local storage data object
