@@ -39,3 +39,6 @@ A grocery list lets the user add new grocery items to a list of all items create
 - setup basic file structure / mvc
 - setup basic html structure / boilerplate
 - setup basic css structure / normalize
+
+## Header
+Header will contain a logo, logo will be a link back to homepage. Logo will consist of logoMarkIcon and LogoTypeText

@@ -1,11 +1,32 @@
+@import "./header.css";
+
 :root {
     font-size: 62.5%;
 
     /* VARIABLES */
 
+    /* box-shadow */
+    --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
     /* color */
     --gray-900: #212529;
+    --gray-300: #dee2e6;
+    --gray-200: #e9ecef;
     --gray-100: #f8f9fa;
+
+    /* font-size */
+    --font-size-large: 2rem;
+    --font-size-xlarge: 2.2rem;
+
+    /* padding */
+    --padding-xsmall: 1.2rem;
+    --padding-small: 1.4rem;
+    --padding-medium: 1.6rem;
+    --padding-large: 1.8rem;
+    --padding-xlarge: 2rem;
+    --padding-xxlarge: 2.4rem;
+    --padding-xxxlarge: 3.2rem;
+
 
     /* line-height */
     --line-height-small: 1.2;
