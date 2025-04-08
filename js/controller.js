@@ -1,8 +1,6 @@
+import data from "./data.js";
 import model from "./model.js"
 import view from "./view.js"
-import data from "./data.js";
-
-
 
 const controller = {
     init () {

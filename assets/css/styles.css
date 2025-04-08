@@ -1,6 +1,7 @@
 @import "./header.css";
 @import "./sidebar.css";
 @import "./form.css";
+@import "./mainContent.css";
 
 :root {
     font-size: 62.5%;
