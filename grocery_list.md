@@ -72,5 +72,6 @@ const groceryListApp = {
 The app has been loaded and either saved data has been set to the data source for the application or a default data object or empty data object has been set as the data source for the application.
 - the view must be initiated after the model
 - setup main section in html to render main section heading and main content area to render list items
+- cache the dom for main content section in view
 - get the data from model through controller and pass to view to render the listItems
 - create components for listItems and pass the props through to render
