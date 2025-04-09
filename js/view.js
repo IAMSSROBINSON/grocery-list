@@ -14,8 +14,9 @@ const view = {
     },
     renderList (listArr) {
         console.log("render view listArr:", listArr);
-        console.log("render List Item:", ListItem());
-        this.mainContentListContainer.appendChild(ListItem());
+        listArr.forEach((listItemObj) => {
+            this.mainContentListContainer.appendChild(ListItem(listItemObj.id, listItemObj.name, listItemObj.quantity, listItemObj.unit, listItemObj.isChecked));
+        })
     },
 }
 

@@ -5,7 +5,7 @@ const data = {
             name: "Lemon",
             quantity: 5,
             unit: "-",
-            isChecked: false,
+            isChecked: true,
         },
          {
             id: getRandomId(),

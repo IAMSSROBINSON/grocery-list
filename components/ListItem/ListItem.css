@@ -1,0 +1,33 @@
+.list-item {
+    background-color: dodgerblue;
+    background-color: var(--gray-200);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: var(--padding-medium);
+    list-style: none;
+    border-radius: var(--border-radius-small);
+}
+
+.list-item-checkbox {
+
+}
+
+
+.list-item-itemName {
+    font-size: var(--font-size-medium);
+}
+
+.list-item-quantity {
+    font-size: var(--font-size-medium);
+
+}
+
+.list-item-unit {
+    font-size: var(--font-size-medium);
+
+}
+
+.list-item-delete-button {
+    justify-self: flex-end ;
+}
