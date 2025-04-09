@@ -55,11 +55,6 @@ const controller = {
                 console.log("checkboxed item:", item.isChecked);
                 console.log("checkboxed item:", item);
                 this.setLocalStorageFromModelData();
-                // if (item.isChecked) {
-                //     view.strikethroughElementsOnChecked(parentId);
-                // } else {
-
-                // }
             }
 
 
