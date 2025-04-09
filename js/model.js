@@ -18,6 +18,9 @@ const model = {
     getList () {
         return this.data.itemsList;
     },
+    getData () {
+        return this.data;
+    },
     removeItem (id) {
         if (id) {
             const itemIndex = this.data.itemsList.findIndex((listItemObj) => {

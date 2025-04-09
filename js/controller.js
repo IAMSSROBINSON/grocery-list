@@ -41,7 +41,13 @@ const controller = {
 
             model.removeItem(parentId);
             view.removeItem(parentId);
+            this.setLocalStorageFromModelData();
         }
+    },
+    setLocalStorageFromModelData () {
+            const data = model.getData();
+            localStorage.setItem("groceryListAppData", JSON.stringify(data));
+            console.log("newLocalStorageData:", localStorage.getItem("groceryListAppData"));
     }
 
 }

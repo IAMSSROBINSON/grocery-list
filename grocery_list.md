@@ -83,4 +83,6 @@ When a list item delete button is clicked the item should be removed from the da
 - on click catch event onTarget from container, validate delete button was clicked by verifying className of delete button
 - get the id of the delete buttons parent which will be the list item itself
 - remove listitem from ui
-- execute function from controller to model that takes an id and finds the itemObject with a matching id and removes that object from the list of all items
+- execute function from controller to model that takes an id and finds the itemObject with a matching id and removes that object from the list of all items in the data source
+- when item is removed from the ui and the data source the local storage needs to be updated with the new state of the data source
+- in the controller stringify the data and set it
