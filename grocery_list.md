@@ -76,7 +76,7 @@ The app has been loaded and either saved data has been set to the data source fo
 - get the data from model through controller and pass to view to render the listItems
 - create components for listItems and pass the props through to render
 
-## Delete Item
+## Delete item
 When a list item delete button is clicked the item should be removed from the data source and from the UI. The UI will reflow to show the remaining list items.
 - setup event in view on list-item-container
 - import handle function from controller into view
@@ -86,3 +86,11 @@ When a list item delete button is clicked the item should be removed from the da
 - execute function from controller to model that takes an id and finds the itemObject with a matching id and removes that object from the list of all items in the data source
 - when item is removed from the ui and the data source the local storage needs to be updated with the new state of the data source
 - in the controller stringify the data and set it
+
+## Checked list item
+If a user clicks on the checkbox of a list item the data source needs update the property isChecked for the object that represents that list item.
+If the value is true then toggle to false, if the value is false then toggle to true. This state must also be reflected in the UI each time it is changed but do not repaint the entire UI just target and update the element in question.
+- user clicks on list item checkbox
+- trigger event in view on list item container
+- catch event on the checkbox element by confirming className in controller handler
+- update from there
