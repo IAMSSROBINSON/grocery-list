@@ -44,6 +44,18 @@ const controller = {
             const parentId = this.getParentIdFromTarget(e)
             if (parentId) {
                 console.log("controller checkbox parent id:", parentId);
+                let itemObjIndex = model.getItemIndexById(parentId);
+                console.log("itemObjIndex:", itemObjIndex);
+
+                let item = model.getItemObjByIdx(itemObjIndex);
+                console.log("checkboxed item:", item.isChecked);
+                console.log("checkboxed item:", item);
+                
+                item.isChecked = !item.isChecked;
+                console.log("checkboxed item:", item.isChecked);
+                console.log("checkboxed item:", item);
+                this.setLocalStorageFromModelData();
+
             }
 
 
