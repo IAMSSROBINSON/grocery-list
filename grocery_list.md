@@ -75,3 +75,12 @@ The app has been loaded and either saved data has been set to the data source fo
 - cache the dom for main content section in view
 - get the data from model through controller and pass to view to render the listItems
 - create components for listItems and pass the props through to render
+
+## Delete Item
+When a list item delete button is clicked the item should be removed from the data source and from the UI. The UI will reflow to show the remaining list items.
+- setup event in view on list-item-container
+- import handle function from controller into view
+- on click validate delete button was clicked by verifying className of delete button
+- get the id of the delete buttons parent which will be the list item itself
+- remove listitem from ui
+- execute function from controller to model that takes an id and finds the itemObject with a matching id and removes that object from the list of all items
