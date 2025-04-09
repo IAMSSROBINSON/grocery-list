@@ -8,11 +8,14 @@
 }
 
 .main-content-header {
-
+    margin-bottom: var(--margin-small);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-normal);
+    color: var(--gray-600);
 }
 
 .main-content-numOfItems {
-
+    display: none;
 }
 
 .main-content-list-container {
