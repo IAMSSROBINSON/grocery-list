@@ -102,3 +102,22 @@ If the value is true then toggle to false, if the value is false then toggle to 
 - update localStorage data source to reflect changes in state
   
 when a checkbox is checked this indicates it has been purchased by the user, there needs to be more of a visual indicator to illustrate this. Strike through the name, the quantity and unit and gray out the text, potentially change the background color of the element also to make the item look less important. Reverse the styles when the checkbox is unchecked;
+
+## Add to list
+When the Add To List button is clicked it should collect the data from item name and quantity and validate the data. 
+
+Prevent default initially and only submit the data if the input values are valid.
+
+If not valid then inform the user visually on the input or on the input and via text prompt.
+
+Could also perform live validation on each change to inputs.
+
+- set attributes for client side validation on relevant form elements, minlength, maxlength, min, max, required
+- add submit event to form in view
+- add novalidate to form to handle validation manually
+- add submit event to form element
+- prevent default of form submission
+- set a function in view to handle form validation since it is easier to do here with access to the DOM elements rather than in controller
+- in html set an element at the bottom of each input that can show an error message
+- get the value of the itemName input
+- checkValidity for: valueMissing, valid, tooLong

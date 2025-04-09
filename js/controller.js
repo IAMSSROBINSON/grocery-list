@@ -75,6 +75,9 @@ const controller = {
             const data = model.getData();
             localStorage.setItem("groceryListAppData", JSON.stringify(data));
             console.log("newLocalStorageData:", localStorage.getItem("groceryListAppData"));
+    },
+    handleFormValidation (e) {
+        console.log("controller handle form validation");
     }
 
 }

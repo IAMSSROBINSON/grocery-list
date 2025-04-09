@@ -51,7 +51,8 @@
 .quantity-and-unit-container {
     display: flex;
     gap: var(--gap-xxlarge);
-    align-items: center;
+    /* align-items: center; */
+    
 }
 
 
@@ -95,3 +96,11 @@
     font-weight: var(--font-weight-medium);
 }
 
+
+/* error-container */
+.error-container {
+    height: 1.4rem;
+    margin-top: var(--margin-xxxsmall);
+    color: var(--error-500);
+    font-size: var(--font-size-xxsmall);
+}

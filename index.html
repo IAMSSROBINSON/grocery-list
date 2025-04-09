@@ -24,27 +24,29 @@
         <p class="sidebar-introText">
 Input details to add item to list:</p>
 
-        <form method="#" action="#" class="addToListForm" id="addToListForm">
+        <form method="#" action="#" class="addToListForm" id="addToListForm" novalidate>
 
             <div class="name-input-container">
                 <label for="name-input" class="name-input-label input-label">
                     Item name
                 </label>
-                <input type="text" id="name-input" name="name-input" placeholder="Lemons" class="name-input input">
+                <input type="text" id="name-input" name="name-input" placeholder="Lemons" class="name-input input" minlength="1" maxlength="20" required>
+                <div class="error-container"><p class="error-message"></p></div>
             </div>
 
             <div class="quantity-and-unit-container">
                 <div class="quantity-container">
-                    <label for="quantity-input-label" class="input-label quantity-input-label">
+                    <label for="quantity-input" class="input-label quantity-input-label">
                         Quantity
                     </label>
-                    <input type="number" id="quantity-input" name="quantity-input" placeholder="5" class="quantity-input input">
+                    <input type="number" id="quantity-input" name="quantity-input" placeholder="5" class="quantity-input input" min="1" max="9999" required>
+                    <div class="error-container"><p class="error-message"></p></div>
                 </div>
 
                 <div class="unit-list-container">
                     <label for="unit-list-input" class="unit-list-input-label input-label">Unit</label>
 
-                    <input list="unit-list" id="unit-list-input" class="unit-list-input input" placeholder=" -">
+                    <input list="unit-list" id="unit-list-input" class="unit-list-input input" placeholder="grams">
 
                     <datalist class="dataList-container" id="unit-list">
                         <option value=" -"></option>
@@ -67,6 +69,7 @@ Input details to add item to list:</p>
                         <option value="Pack"></option>
                         <option value="Bunch"></option>
                     </datalist>
+                    
                 </div>
             </div>
 

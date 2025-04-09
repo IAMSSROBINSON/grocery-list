@@ -9,6 +9,19 @@ const view = {
         this.cacheMainContentDOM();
     },
     cacheMainContentDOM () {
+        this.nameInput = document.querySelector(".name-input");
+        this.quantityInput = document.querySelector(".quantity-input");
+        this.unitListInput = document.querySelector(".unit-list-input");
+
+        this.addToListForm = document.querySelector(".addToListForm");
+        this.addToListForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            console.log("Add to list form button clicked");
+            console.log("Form submission prevented");
+            // controller.handleFormValidation(e);
+            this.validateFormData(e);
+        })
+
         this.mainContentContainer = document.querySelector(".main-content-container");
 
         this.mainContentNumOfItems = document.querySelector(".main-content-numOfItems");
@@ -34,6 +47,15 @@ const view = {
     removeItem (id) {
         document.getElementById(id).remove();
     },
+    validateFormData (e) {
+        console.log("view validateFormData:", e);
+
+        const nameInput = this.nameInput;
+        console.log("itemName input:", nameInput);
+        console.log("itemName value:", nameInput.value);
+        console.log("itemName checkValidity():", nameInput.checkValidity());
+        console.log("itemName checkValidity():", nameInput.validity);
+    }
 }
 
 export default view;
