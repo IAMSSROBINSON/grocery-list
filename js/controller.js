@@ -29,18 +29,32 @@ const controller = {
     handleDelete (e) {
             console.log("controller.handleDelete", e);
             console.log("delete button clicked");
-            const target = e.target;
-            console.log("target", e.target);
 
-            const parent = target.parentElement;
-            console.log("target parent", e.target.parentElement);
+            const parentId = this.getParentIdFromTarget(e)
+            if (parentId) {
+                model.removeItem(parentId);
+                view.removeItem(parentId);
+                this.setLocalStorageFromModelData();
+            }
+    },
+    handleCheckbox (e) {
+        console.log("controller.handleCheckbox", e);
+            console.log("controller checkbox clicked");
+            console.log("controller checkbox parent id:", this.getParentIdFromTarget(e));
 
-            const parentId = parent.id;
-            console.log("target parent id", e.target.parentElement.id);
 
-            model.removeItem(parentId);
-            view.removeItem(parentId);
-            this.setLocalStorageFromModelData();
+    },
+    getParentIdFromTarget(e) {
+        const target = e?.target;
+            console.log("target", e?.target);
+
+            const parent = target?.parentElement;
+            console.log("target parent", e?.target?.parentElement);
+
+            const parentId = parent?.id;
+            console.log("target parent id", e?.target?.parentElement?.id);
+            
+            return parentId ?? null;
     },
     setLocalStorageFromModelData () {
             const data = model.getData();

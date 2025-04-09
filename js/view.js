@@ -20,6 +20,7 @@ const view = {
                 controller.handleDelete(e);
             } else if ([...e.target.classList].includes("list-item-checkbox")) {
                 console.log("list-item-checkbox clicked");
+                controller.handleCheckbox(e);
             }
             
         })
