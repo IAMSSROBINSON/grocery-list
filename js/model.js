@@ -23,10 +23,7 @@ const model = {
     },
     removeItem (id) {
         if (id) {
-            const itemIndex = this.data.itemsList.findIndex((listItemObj) => {
-                console.log("findIndex listitem:", listItemObj);
-                return listItemObj.id === id;
-            })
+            const itemIndex = this.getItemIndexById(id);
             
             if (itemIndex !== -1) {
                 const item = this.data.itemsList[itemIndex];
@@ -35,7 +32,15 @@ const model = {
                 console.log("Data remaining:", this.data.itemsList);
             }
         }
+    },
+    getItemIndexById(id) {
+        const itemIndex = this.data.itemsList.findIndex((listItemObj) => {
+            console.log("findIndex listitem:", listItemObj);
+            return listItemObj.id === id;
+        })
+        return itemIndex;
     }
+   
 }
 
 export default model;

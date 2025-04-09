@@ -40,7 +40,11 @@ const controller = {
     handleCheckbox (e) {
         console.log("controller.handleCheckbox", e);
             console.log("controller checkbox clicked");
-            console.log("controller checkbox parent id:", this.getParentIdFromTarget(e));
+
+            const parentId = this.getParentIdFromTarget(e)
+            if (parentId) {
+                console.log("controller checkbox parent id:", parentId);
+            }
 
 
     },

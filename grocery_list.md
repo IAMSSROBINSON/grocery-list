@@ -94,3 +94,9 @@ If the value is true then toggle to false, if the value is false then toggle to 
 - trigger event in view on list item container
 - catch event on the checkbox element by confirming className in controller handler
 - update from there
+- id of parent element found
+- locate the corresponding object from data source in model and change isChecked to opposite
+- locate the element in the view via id
+- find the checkbox within the element
+- set the attribute checked or unchecked inline with isChecked
+- update localStorage data source to reflect changes in state
