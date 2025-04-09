@@ -1,4 +1,5 @@
 import data from "./data.js";
+import Item from "./Item.js";
 import model from "./model.js"
 import view from "./view.js"
 
@@ -78,6 +79,10 @@ const controller = {
     },
     handleFormValidation (e) {
         console.log("controller handle form validation");
+    },
+    createNewItemClass (name, quantity, unit) {
+        const item = new Item(name, quantity, unit);
+        console.log("controller createNewItemClass:", item);
     }
 
 }
