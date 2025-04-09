@@ -120,4 +120,7 @@ Could also perform live validation on each change to inputs.
 - set a function in view to handle form validation since it is easier to do here with access to the DOM elements rather than in controller
 - in html set an element at the bottom of each input that can show an error message
 - get the value of the itemName input
-- checkValidity for: valueMissing, valid, tooLong
+- check validity property on the element for: 
+- valueMissing, should be false for valid
+- valid, should be true for element validation attributes
+- tooLong, should be false for valid

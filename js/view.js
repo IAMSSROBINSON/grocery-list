@@ -51,10 +51,48 @@ const view = {
         console.log("view validateFormData:", e);
 
         const nameInput = this.nameInput;
-        console.log("itemName input:", nameInput);
-        console.log("itemName value:", nameInput.value);
-        console.log("itemName checkValidity():", nameInput.checkValidity());
-        console.log("itemName checkValidity():", nameInput.validity);
+        const quantityInput = this.quantityInput;
+        const unitListInput = this.unitListInput;
+
+        // validate name input
+        if(nameInput.value.trim() === "") {
+            this.validateInput(nameInput, "! Must have an item name");
+        } else if (nameInput.validity.tooLong) {
+            this.validateInput(nameInput, "! Must be less than 20 characters");
+        } else {
+            console.log("Input is valid");
+            nameInput.classList.remove("invalidInput");
+            nameInput.nextElementSibling.textContent = "";
+            nameInput.classList.add("validInput");
+        }
+
+        // validate quantity input
+        if(quantityInput.value.trim() === "" || quantityInput.validity.rangeUnderflow) {
+            this.validateInput(quantityInput, "! Value must be greater than 0");
+        } 
+        else if (quantityInput.validity.rangeOverflow) {
+            this.validateInput(quantityInput, "! Value must be less than 9999");
+        }
+        else {
+            console.log("Input is valid");
+            quantityInput.classList.remove("invalidInput");
+            quantityInput.nextElementSibling.textContent = "";
+            quantityInput.classList.add("validInput");
+        }
+
+        if (unitListInput.value.trim() === "") {
+            unitListInput.value = "-";
+            unitListInput.classList.add("validInput");
+        } else {
+            unitListInput.classList.remove("validInput");
+        }
+        
+
+    },
+    validateInput (input, message) {
+        input.nextElementSibling.textContent = message;
+        input.classList.remove("validInput");
+        input.classList.add("invalidInput");
     }
 }
 
