@@ -2,6 +2,7 @@
 @import "./sidebar.css";
 @import "./form.css";
 @import "./mainContent.css";
+@import "../../components/ListItem/ListItem.css";
 
 :root {
     font-size: 62.5%;

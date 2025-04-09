@@ -1,3 +1,5 @@
+import ListItem from "../components/ListItem/index.js";
+
 const view = {
     init () {
         console.log("Hello from view init");
@@ -12,6 +14,8 @@ const view = {
     },
     renderList (listArr) {
         console.log("render view listArr:", listArr);
+        console.log("render List Item:", ListItem());
+        this.mainContentListContainer.appendChild(ListItem());
     },
 }
 
