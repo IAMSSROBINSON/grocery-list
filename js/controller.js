@@ -80,9 +80,12 @@ const controller = {
     handleFormValidation (e) {
         console.log("controller handle form validation");
     },
-    createNewItemClass (name, quantity, unit) {
+    createNewItemClassAndAddToDataItemsListThenRenderUI (name, quantity, unit) {
         const item = new Item(name, quantity, unit);
         console.log("controller createNewItemClass:", item);
+        model.addItemObjToDataListOfItems(item);
+        this.setLocalStorageFromModelData();
+        view.appendNewListItemComponent([renderList]);
     }
 
 }

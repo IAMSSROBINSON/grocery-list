@@ -42,6 +42,10 @@ const model = {
     },
     getItemObjByIdx (index) {
         return this.data.itemsList[index];
+    },
+    addItemObjToDataListOfItems (itemObj) {
+        this.data.itemsList.push(itemObj);
+        console.log("model itemObj add to itemsList", this.data.itemsList);
     }
    
 }

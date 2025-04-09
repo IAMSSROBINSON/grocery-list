@@ -94,7 +94,7 @@ const view = {
             console.log("nameInput", nameInput.value);
             console.log("quantityInput", quantityInput.value);
             console.log("unitListInput", unitListInput.value);
-            controller.createNewItemClass(nameInput.value, quantityInput.value, unitListInput.value);
+            controller.createNewItemClassAndAddToDataItemsListThenRenderUI(nameInput.value, quantityInput.value, unitListInput.value);
         } else {
             console.log("Not all inputs are valid");
         }
