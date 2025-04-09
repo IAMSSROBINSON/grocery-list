@@ -25,6 +25,23 @@ const controller = {
             localStorage.setItem("groceryListAppData", JSON.stringify(data));
             model.setNewAppData(data);
         }
+    },
+    handleDelete (e) {
+        console.log("controller.handleDelete", e);
+        if([...e.target.classList].includes("list-item-delete-button")) {
+            console.log("delete button clicked");
+            const target = e.target;
+            console.log("target", e.target);
+
+            const parent = target.parentElement;
+            console.log("target parent", e.target.parentElement);
+
+            const parentId = parent.id;
+            console.log("target parent id", e.target.parentElement.id);
+
+            model.removeItem(parentId);
+            view.removeItem(parentId);
+        }
     }
 
 }

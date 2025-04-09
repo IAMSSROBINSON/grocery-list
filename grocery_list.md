@@ -80,7 +80,7 @@ The app has been loaded and either saved data has been set to the data source fo
 When a list item delete button is clicked the item should be removed from the data source and from the UI. The UI will reflow to show the remaining list items.
 - setup event in view on list-item-container
 - import handle function from controller into view
-- on click validate delete button was clicked by verifying className of delete button
+- on click catch event onTarget from container, validate delete button was clicked by verifying className of delete button
 - get the id of the delete buttons parent which will be the list item itself
 - remove listitem from ui
 - execute function from controller to model that takes an id and finds the itemObject with a matching id and removes that object from the list of all items

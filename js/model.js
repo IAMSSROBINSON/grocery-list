@@ -17,6 +17,21 @@ const model = {
     },
     getList () {
         return this.data.itemsList;
+    },
+    removeItem (id) {
+        if (id) {
+            const itemIndex = this.data.itemsList.findIndex((listItemObj) => {
+                console.log("findIndex listitem:", listItemObj);
+                return listItemObj.id === id;
+            })
+            
+            if (itemIndex !== -1) {
+                const item = this.data.itemsList[itemIndex];
+                this.data.itemsList.splice(itemIndex, 1);
+                console.log("Item removed from data:", item);
+                console.log("Data remaining:", this.data.itemsList);
+            }
+        }
     }
 }
 
