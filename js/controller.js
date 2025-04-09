@@ -85,7 +85,7 @@ const controller = {
         console.log("controller createNewItemClass:", item);
         model.addItemObjToDataListOfItems(item);
         this.setLocalStorageFromModelData();
-        view.appendNewListItemComponent([renderList]);
+        view.renderList([item]);
     }
 
 }

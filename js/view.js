@@ -40,9 +40,11 @@ const view = {
     },
     renderList (listArr) {
         console.log("render view listArr:", listArr);
+        const docFrag = document.createDocumentFragment();
         listArr.forEach((listItemObj) => {
-            this.mainContentListContainer.appendChild(ListItem(listItemObj.id, listItemObj.name, listItemObj.quantity, listItemObj.unit, listItemObj.isChecked));
+            docFrag.appendChild(ListItem(listItemObj.id, listItemObj.name, listItemObj.quantity, listItemObj.unit, listItemObj.isChecked));
         })
+        this.mainContentListContainer.appendChild(docFrag);
     },
     removeItem (id) {
         document.getElementById(id).remove();
