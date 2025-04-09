@@ -100,3 +100,5 @@ If the value is true then toggle to false, if the value is false then toggle to 
 - find the checkbox within the element
 - set the attribute checked or unchecked inline with isChecked
 - update localStorage data source to reflect changes in state
+  
+when a checkbox is checked this indicates it has been purchased by the user, there needs to be more of a visual indicator to illustrate this. Strike through the name, the quantity and unit and gray out the text, potentially change the background color of the element also to make the item look less important. Reverse the styles when the checkbox is unchecked;

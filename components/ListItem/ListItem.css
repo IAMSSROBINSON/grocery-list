@@ -10,7 +10,6 @@
 
 .list-item-checkbox {
     cursor: pointer;
-
 }
 
 
@@ -30,4 +29,13 @@
 .list-item-delete-button {
     padding: 4px 6px;
     cursor: pointer;
+}
+
+/* checked / unchecked */
+
+input[type="checkbox"]:checked ~ *:not(:last-child) {
+   text-decoration: line-through;
+   color: var(--gray-600);
+
+   
 }

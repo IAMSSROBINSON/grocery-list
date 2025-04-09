@@ -33,6 +33,14 @@ const view = {
     },
     removeItem (id) {
         document.getElementById(id).remove();
+    },
+    strikethroughElementsOnChecked (id) {
+        
+        const element = document.getElementById(id);
+        console.log("view strike through:", element);
+
+        const nameElement = element.querySelector(".list-item-itemName").style.textDecoration = "line-through";
+
     }
 }
 
