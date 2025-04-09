@@ -124,3 +124,5 @@ Could also perform live validation on each change to inputs.
 - valueMissing, should be false for valid
 - valid, should be true for element validation attributes
 - tooLong, should be false for valid
+- validate quantity input also for min and max, missingValue
+- automate unitInput if no selection or entry is made - it is still valid as it is not a requirement
