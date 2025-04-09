@@ -126,3 +126,18 @@ Could also perform live validation on each change to inputs.
 - tooLong, should be false for valid
 - validate quantity input also for min and max, missingValue
 - automate unitInput if no selection or entry is made - it is still valid as it is not a requirement
+
+## Submit form
+The inputs are now validated and the user clicks the 'Add To List +' button for the final time. The validated values now need to be turned into a list item object so that a list item element can be created in the UI.
+- create a class Item {}
+- the constructor should receive arguments (name, quantity, unit)
+- id should be auto random generated and set in constructor also
+- isChecked should be set to false by default in the constructor
+- set Item.js inside js dir
+- when add to list button is clicked pass props to new Item(nameValue, quantityValue, unitValue)
+- this returns a new Item Object
+- add this object to the data source via data.itemsList
+- set up add to itemsList method in models that accepts an object
+- push to data.itemsList
+- update localStorage
+- generate new ListItem component and append to the list container in the UI through view

@@ -87,6 +87,16 @@ const view = {
             unitListInput.classList.remove("validInput");
         }
         
+        // Final validity check
+        let allInputs = [nameInput, quantityInput];
+        if (allInputs.every((input) => input.validity.valid)) {
+            console.log("All inputs are valid");
+            console.log("nameInput", nameInput.value);
+            console.log("quantityInput", quantityInput.value);
+            console.log("unitListInput", unitListInput.value);
+        } else {
+            console.log("Not all inputs are valid");
+        }
 
     },
     validateInput (input, message) {
@@ -94,6 +104,8 @@ const view = {
         input.classList.remove("validInput");
         input.classList.add("invalidInput");
     }
+
+    
 }
 
 export default view;
