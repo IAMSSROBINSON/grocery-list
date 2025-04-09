@@ -16,7 +16,12 @@ const view = {
         this.mainContentListContainer = document.querySelector(".main-content-list-container");
 
         this.mainContentListContainer.addEventListener("click", (e) => {
-            controller.handleDelete(e);
+            if ([...e.target.classList].includes("list-item-delete-button")) {
+                controller.handleDelete(e);
+            } else if ([...e.target.classList].includes("list-item-checkbox")) {
+                console.log("list-item-checkbox clicked");
+            }
+            
         })
     },
     renderList (listArr) {

@@ -27,8 +27,7 @@ const controller = {
         }
     },
     handleDelete (e) {
-        console.log("controller.handleDelete", e);
-        if([...e.target.classList].includes("list-item-delete-button")) {
+            console.log("controller.handleDelete", e);
             console.log("delete button clicked");
             const target = e.target;
             console.log("target", e.target);
@@ -42,7 +41,6 @@ const controller = {
             model.removeItem(parentId);
             view.removeItem(parentId);
             this.setLocalStorageFromModelData();
-        }
     },
     setLocalStorageFromModelData () {
             const data = model.getData();
