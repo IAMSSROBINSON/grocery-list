@@ -34,7 +34,6 @@ const view = {
       if ([...e.target.classList].includes("list-item-delete-button")) {
         controller.handleDelete(e);
       } else if ([...e.target.classList].includes("list-item-checkbox")) {
-        ("list-item-checkbox clicked");
         controller.handleCheckbox(e);
       }
     });
