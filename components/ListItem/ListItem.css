@@ -50,6 +50,7 @@
 
 .list-item-delete-button {
   object-fit: cover;
+  opacity: 75%;
 }
 
 /* checked / unchecked */
