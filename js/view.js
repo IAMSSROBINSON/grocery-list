@@ -5,7 +5,6 @@ import ListItem from "../components/ListItem/index.js";
 
 const view = {
   init() {
-    ("Hello from view init");
     this.cacheMainContentDOM();
   },
   cacheMainContentDOM() {
@@ -16,9 +15,6 @@ const view = {
     this.addToListForm = document.querySelector(".addToListForm");
     this.addToListForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      ("Add to list form button clicked");
-      ("Form submission prevented");
-      // controller.handleFormValidation(e);
       this.validateFormData(e);
     });
 
@@ -44,7 +40,6 @@ const view = {
     });
   },
   renderList(listArr) {
-    "render view listArr:", listArr;
     const docFrag = document.createDocumentFragment();
     listArr.forEach((listItemObj) => {
       docFrag.appendChild(
@@ -63,8 +58,6 @@ const view = {
     document.getElementById(id).remove();
   },
   validateFormData(e) {
-    "view validateFormData:", e;
-
     const nameInput = this.nameInput;
     const quantityInput = this.quantityInput;
     const unitListInput = this.unitListInput;
@@ -90,7 +83,6 @@ const view = {
     } else if (quantityInput.validity.rangeOverflow) {
       this.validateInput(quantityInput, "! Value must be < than 9999");
     } else {
-      ("Input is valid");
       quantityInput.classList.remove("invalidInput");
       quantityInput.nextElementSibling.textContent = "";
       quantityInput.classList.add("validInput");
@@ -106,17 +98,11 @@ const view = {
     // Final validity check
     let allInputs = [nameInput, quantityInput];
     if (allInputs.every((input) => input.validity.valid)) {
-      ("All inputs are valid");
-      "nameInput", nameInput.value;
-      "quantityInput", quantityInput.value;
-      "unitListInput", unitListInput.value;
       controller.createNewItemClassAndAddToDataItemsListThenRenderUI(
         nameInput.value,
         quantityInput.value,
         unitListInput.value
       );
-    } else {
-      ("Not all inputs are valid");
     }
   },
   validateInput(input, message) {
