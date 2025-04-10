@@ -22,7 +22,6 @@ const model = {
       const itemIndex = this.getItemIndexById(id);
 
       if (itemIndex !== -1) {
-        const item = this.getItemObjByIdx(itemIndex);
         this.data.itemsList.splice(itemIndex, 1);
       }
     }
