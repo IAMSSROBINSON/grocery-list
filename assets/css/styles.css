@@ -3,6 +3,8 @@
 @import "./form.css";
 @import "./mainContent.css";
 @import "../../components/ListItem/ListItem.css";
+@import "./mediaQueries.css";
+
 
 :root {
     font-size: 62.5%;

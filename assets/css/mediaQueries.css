@@ -1,0 +1,29 @@
+@media screen and (min-width: 601px) {
+    .sidebar-container {
+    }
+
+    .addToListForm {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .name-input-container {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .quantity-input-container {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .unit-list-input-container {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .addToList-button {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+}
