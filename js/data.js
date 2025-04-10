@@ -11,7 +11,7 @@ const data = {
       id: getRandomId(),
       name: "Tuna 🐟",
       quantity: 2,
-      unit: "Cans",
+      unit: "cans",
       isChecked: false,
     },
     {
