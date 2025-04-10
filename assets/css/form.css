@@ -65,6 +65,13 @@
   grid-column: 1 / -1;
   grid-row: 3 / 4;
   align-self: flex-start;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: var(--lemon-300);
+    color: var(--gray-800);
+  }
 }
 
 /* error-container */
