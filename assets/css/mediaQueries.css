@@ -1,97 +1,96 @@
 @media screen and (min-width: 601px) {
-    .sidebar-container {
-    }
+  .sidebar-container {
+  }
 
-    .addToListForm {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-    }
+  .addToListForm {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
 
-    .name-input-container {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
+  .name-input-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 
-    .quantity-input-container {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-    }
+  .quantity-input-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 
-    .unit-list-input-container {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-    }
+  .unit-list-input-container {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
 
-    .addToList-button {
-        grid-column: 1 / -1;
-        grid-row: 2 / 3;
-    }
+  .addToList-button {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
 }
 
 @media screen and (min-width: 769px) {
-    body {
-        display: grid;
-        grid-template-columns: minmax(200px, 300px) 1fr !important;
-        grid-template-rows: auto 1fr !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
+  body {
+    display: grid;
+    grid-template-columns: minmax(200px, 300px) 1fr !important;
+    grid-template-rows: auto 1fr !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
-    .header {
-        grid-column: 1 / -1;
-        grid-row: 1 / 2;
-    }
+  .header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
 
-    .sidebar-container {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        background-color: var(--gray-200);
-        margin-top: 0;
-        padding-top: var(--padding-xxxlarge);
-    }
+  .sidebar-container {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: var(--gray-200);
+    margin-top: 0;
+    padding-top: var(--padding-xxxlarge);
+  }
 
-    .main-content-container {
-        grid-column: 2 / -1;
-        grid-row: 2 / 3;
-        margin-top: 0;
-    }
+  .main-content-container {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+    margin-top: 0;
+  }
 
-    .addToListForm {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-    }
+  .addToListForm {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
 
-    .name-input-container {
-        grid-column: 1 / -1;
-        grid-row: 1 / 2;
-    }
+  .name-input-container {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
 
-    .quantity-input-container {
-        grid-column: 1 / -1;
-        grid-row: 2 / 3;
-    }
+  .quantity-input-container {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
 
-    .unit-list-input-container {
-        grid-column: 1 / -1;
-        grid-row: 3 / 4;
-    }
+  .unit-list-input-container {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
 
-    .addToList-button {
-        grid-column: 1 / -1;
-        grid-row: 4 / 5;
-        align-self: flex-start;
-    }
-    
-    .footer {
-        display: none;
-    }
-    
-    .main-content-list-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-        grid-template-rows: auto;
-        max-height: calc(100vh - 130px);
-        overflow-y: auto;
-    }
-    
+  .addToList-button {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    align-self: flex-start;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .main-content-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-rows: auto;
+    max-height: calc(100vh - 130px);
+    overflow-y: auto;
+  }
 }

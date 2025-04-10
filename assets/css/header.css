@@ -1,36 +1,33 @@
 .header {
-    padding: var(--padding-medium) var(--padding-medium);
-    box-shadow: var(--box-shadow-light);
-    
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-    z-index: 1;
+  padding: var(--padding-medium) var(--padding-medium);
+  box-shadow: var(--box-shadow-light);
+
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  z-index: 1;
 }
 
 .logo-link {
-    display: flex;
-    align-items: center;
-    gap: var(--gap-xsmall);
-    text-decoration: none;
-    width: fit-content;
-    cursor: pointer;
-    color: var(--gray-900);
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xsmall);
+  text-decoration: none;
+  width: fit-content;
+  cursor: pointer;
+  color: var(--gray-900);
 }
 
 .logo-mark-container {
-  
 }
 
 .logo-mark-icon {
-
 }
 
 .logo-mark-icon {
-    font-size: var(--font-size-xlarge);
+  font-size: var(--font-size-xlarge);
 }
 
 .logo-type {
-    font-size: var(--font-size-large);
-    font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
 }
-
