@@ -1,41 +1,53 @@
 .list-item {
     background-color: var(--gray-200);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: var(--padding-small);
     list-style: none;
     border-radius: var(--border-radius-small);
+
+    display: grid;
+    grid-template-columns: auto 1fr 5ch 1fr 40px;
+    grid-template-rows: 1fr;
+    gap: var(--gap-small);
+    align-items: center;
 }
 
 .list-item-checkbox {
     cursor: pointer;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
 }
-
 
 .list-item-itemName {
     font-size: var(--font-size-small);
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
 }
 
 .list-item-quantity {
     font-size: var(--font-size-small);
-
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
 }
 
 .list-item-unit {
     font-size: var(--font-size-small);
+    grid-column: 4 / 5;
+    grid-row: 1 / -1;
+    justify-self: center;
 }
 
 .list-item-delete-button {
-    padding: 4px 6px;
+    padding: 4px;
     cursor: pointer;
+    grid-column: 5 / 6;
+    grid-row: 1 / -1;
+    width: 24px;
+    height: 24px;
+    justify-self: end;
 }
 
 /* checked / unchecked */
-
 input[type="checkbox"]:checked ~ *:not(:last-child) {
    text-decoration: line-through;
    color: var(--gray-600);
-
-   
 }

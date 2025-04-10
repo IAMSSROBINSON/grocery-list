@@ -98,6 +98,7 @@
     font-size: var(--font-size-xxsmall);
 }
 
+
 /* valid input */
 .validInput {
     border: 0.5px solid var(--success-400);
