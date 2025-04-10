@@ -1,6 +1,5 @@
 .sidebar-container {
   margin-top: var(--margin-xxlarge);
-  /* background-color: var(--gray-200); */
   padding: var(--padding-medium) var(--padding-medium);
 
   grid-column: 2 / 3;

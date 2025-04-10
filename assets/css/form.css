@@ -12,7 +12,7 @@
 
 /* labels */
 .input-label {
-  font-size: var(--font-size-xxsmall);
+  font-size: var(--font-size-xsmall);
   color: var(--gray-600);
 }
 
@@ -20,11 +20,6 @@
 .name-input-container {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
-}
-
-.input-label {
-  /* display: inline-block; */
-  letter-spacing: var(--letter-spacing-small);
 }
 
 .input {
@@ -42,15 +37,6 @@
 .quantity-input-container {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-}
-
-.quantity-input-label {
-}
-
-#quantity-input {
-}
-
-.quantity-input {
 }
 
 /* unit input */
