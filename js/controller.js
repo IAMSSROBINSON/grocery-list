@@ -35,24 +35,22 @@ const controller = {
     const parentId = this.getParentIdFromTarget(e);
     if (parentId) {
       let itemObjIndex = model.getItemIndexById(parentId);
-
       let item = model.getItemObjByIdx(itemObjIndex);
       item.isChecked = !item.isChecked;
       this.setLocalStorageFromModelData();
     }
   },
   getParentIdFromTarget(e) {
-    let id = null;
     const target = e?.target;
     let parent = target?.parentElement;
     let parentId = parent?.id;
 
-    while (!id) {
+    while (!parentId) {
       parent = parent.parentElement;
-      id = parent.id;
+      parentId = parent?.id;
     }
 
-    return id ?? null;
+    return parentId ?? null;
   },
   setLocalStorageFromModelData() {
     const data = model.getData();
