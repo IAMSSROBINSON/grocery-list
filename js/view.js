@@ -67,7 +67,6 @@ const view = {
     } else if (nameInput.validity.tooLong) {
       this.validateInput(nameInput, "! Must be less than 20 characters");
     } else {
-      ("Input is valid");
       nameInput.classList.remove("invalidInput");
       nameInput.nextElementSibling.textContent = "";
       nameInput.classList.add("validInput");
