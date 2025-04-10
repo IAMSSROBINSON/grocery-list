@@ -61,16 +61,23 @@ const controller = {
 
     },
     getParentIdFromTarget(e) {
+        let id = null;
         const target = e?.target;
             console.log("target", e?.target);
 
-            const parent = target?.parentElement;
+            let parent = target?.parentElement;
             console.log("target parent", e?.target?.parentElement);
 
-            const parentId = parent?.id;
+            let parentId = parent?.id;
             console.log("target parent id", e?.target?.parentElement?.id);
-            
-            return parentId ?? null;
+
+            while (!id) {
+                parent = parent.parentElement;
+                id = parent.id;
+                console.log("while parent id:", parent, id);
+            }
+             
+            return id ?? null;
     },
     setLocalStorageFromModelData () {
             const data = model.getData();

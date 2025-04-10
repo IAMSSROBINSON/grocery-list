@@ -39,14 +39,17 @@
     justify-self: center;
 }
 
-.list-item-delete-button {
-    padding: 4px;
+.list-item-delete-button-container {
     cursor: pointer;
     grid-column: 5 / 6;
     grid-row: 1 / -1;
     width: 24px;
     height: 24px;
     justify-self: end;
+}
+
+.list-item-delete-button {
+   object-fit: cover;
 }
 
 /* checked / unchecked */

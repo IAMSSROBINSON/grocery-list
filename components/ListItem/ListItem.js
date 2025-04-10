@@ -21,15 +21,20 @@ function ListItem (id, name, quantity, unit = "-", isChecked = "false") {
     listItemUnit.classList.add("list-item-unit");
     listItemUnit.textContent = unit;
 
-    const listItemDeleteButton = document.createElement("button");
+    const listItemDeleteButtonContainer = document.createElement("div");
+    listItemDeleteButtonContainer.classList.add("list-item-delete-button-container");
+
+    const listItemDeleteButton = document.createElement("img");
     listItemDeleteButton.classList.add("list-item-delete-button");
-    listItemDeleteButton.textContent = "X";
+    listItemDeleteButton.setAttribute("alt", "Delete list item button");
+    listItemDeleteButton.src = "./assets/icons/delete.svg";
 
     listItemLi.appendChild(listItemCheckbox);
     listItemLi.appendChild(listItemName);
     listItemLi.appendChild(listItemQuantity);
     listItemLi.appendChild(listItemUnit);
-    listItemLi.appendChild(listItemDeleteButton);
+    listItemDeleteButtonContainer.appendChild(listItemDeleteButton);
+    listItemLi.appendChild(listItemDeleteButtonContainer);
 
     return listItemLi;
 }
