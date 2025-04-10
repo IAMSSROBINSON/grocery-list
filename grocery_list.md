@@ -151,6 +151,6 @@ Currently the application has been designed with a mobile first approach. The la
 ## Clean up
 - clear form when list item is submitted and valid
 - swap delete button out for trash can icon
-- delete s
+- delete console.logs
 - delete empty css declarations
 - format all documents
