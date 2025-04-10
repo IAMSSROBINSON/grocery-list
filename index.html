@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
@@ -8,8 +9,11 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <a href="./index.html" class="logo-link">
@@ -22,7 +26,7 @@
 
     <section class="sidebar-container">
         <p class="sidebar-introText">
-Input details to add item to list:</p>
+            Input details to add item to list:</p>
 
         <form method="#" action="#" class="addToListForm" id="addToListForm" novalidate>
 
@@ -30,51 +34,53 @@ Input details to add item to list:</p>
                 <label for="name-input" class="name-input-label input-label">
                     Item name
                 </label>
-                <input type="text" id="name-input" name="name-input" placeholder="Lemons" class="name-input input" minlength="1" maxlength="20" required>
-                <div class="error-container"><p class="error-message"></p></div>
+                <input type="text" id="name-input" name="name-input" placeholder="Lemons" class="name-input input"
+                    minlength="1" maxlength="20" required>
+                <div class="error-container">
+                    <p class="error-message"></p>
+                </div>
             </div>
 
-            <div class="quantity-and-unit-container">
-                <div class="quantity-container">
-                    <label for="quantity-input" class="input-label quantity-input-label">
-                        Quantity
-                    </label>
-                    <input type="number" id="quantity-input" name="quantity-input" placeholder="5" class="quantity-input input" min="1" max="9999" required>
-                    <div class="error-container"><p class="error-message"></p></div>
+            <div class="quantity-input-container">
+                <label for="quantity-input" class="input-label quantity-input-label">
+                    Quantity
+                </label>
+                <input type="number" id="quantity-input" name="quantity-input" placeholder="5"
+                    class="quantity-input input" min="1" max="9999" required>
+                <div class="error-container">
+                    <p class="error-message"></p>
                 </div>
+            </div>
 
-                <div class="unit-list-container">
-                    <label for="unit-list-input" class="unit-list-input-label input-label">Unit</label>
+            <div class="unit-list-input-container">
+                <label for="unit-list-input" class="unit-list-input-label input-label">Unit</label>
 
-                    <input list="unit-list" id="unit-list-input" class="unit-list-input input" placeholder="grams">
+                <input list="unit-list" id="unit-list-input" class="unit-list-input input" placeholder="grams">
 
-                    <datalist class="dataList-container" id="unit-list">
-                        <option value=" -"></option>
-                        <option value="Grams (g)"></option>
-                        <option value="Kilograms (kg)"></option>
-                        <option value="Litres (l)"></option>
-                        <option value="Teaspoons (tsp)"></option>
-                        <option value="Tablespoons (tbsp)"></option>
-                        <option value="Cups"></option>
-                        <option value="Ounce (oz)"></option>
-                        <option value="Pounds (lb)"></option>
-                        <option value="Pinch"></option>
-                        <option value="Dash"></option>
-                        <option value="Quart"></option>
-                        <option value="Pint"></option>
-                        <option value="Gallon"></option>
-                        <option value="Piece"></option>
-                        <option value="Slice"></option>
-                        <option value="Can"></option>
-                        <option value="Pack"></option>
-                        <option value="Bunch"></option>
-                    </datalist>
-                    
-                </div>
+                <datalist class="dataList-container" id="unit-list">
+                    <option value=" -"></option>
+                    <option value="Grams (g)"></option>
+                    <option value="Kilograms (kg)"></option>
+                    <option value="Litres (l)"></option>
+                    <option value="Teaspoons (tsp)"></option>
+                    <option value="Tablespoons (tbsp)"></option>
+                    <option value="Cups"></option>
+                    <option value="Ounce (oz)"></option>
+                    <option value="Pounds (lb)"></option>
+                    <option value="Pinch"></option>
+                    <option value="Dash"></option>
+                    <option value="Quart"></option>
+                    <option value="Pint"></option>
+                    <option value="Gallon"></option>
+                    <option value="Piece"></option>
+                    <option value="Slice"></option>
+                    <option value="Can"></option>
+                    <option value="Pack"></option>
+                    <option value="Bunch"></option>
+                </datalist>
             </div>
 
             <input type="submit" class="addToList-button" value="Add To List +">
-           
         </form>
     </section>
 
@@ -90,4 +96,5 @@ Input details to add item to list:</p>
     <footer class="footer">&copy;SSR 2025</footer>
     <script type="module" src="./js/controller.js"></script>
 </body>
+
 </html>

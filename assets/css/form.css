@@ -1,17 +1,9 @@
 .addToListForm {
-    /* margin-top: var(--margin-xlarge); */
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: var(--gap-small) var(--gap-large);
 }
-
-.addToListForm div {
-    margin-bottom: var(--margin-xsmall);
-}
-
-.addToListForm {
-
-}
-
 
 /* input placeholder */
 ::placeholder {
@@ -27,6 +19,11 @@
 
 
 /* name input */
+.name-input-container {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
 .name-input-label {
     display: block;
 }
@@ -36,8 +33,7 @@
 }
 
 .input {
-    width: 100%;
-    margin-top: var(--margin-xxxsmall);
+    min-width: 100%;
 }
 
 .input, .addToList-button {
@@ -47,18 +43,10 @@
 }
 
 
-/* quantity and input container */
-.quantity-and-unit-container {
-    display: flex;
-    gap: var(--gap-xxlarge);
-    /* align-items: center; */
-    
-}
-
-
 /* quantity input */
-.quantity-container {
-
+.quantity-input-container {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
 .quantity-input-label {
@@ -74,8 +62,9 @@
 
 
 /* unit input */
-.unit-list-container {
-
+.unit-list-input-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .unit-list-input-label {
@@ -89,17 +78,21 @@
 
 /* addToList-button */
 .addToList-button {
+    margin-top: var(--margin-large);
     width: 100%;
     background-color: var(--gray-800);
     color: var(--white-cloud);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-medium);
+
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
 }
 
 
 /* error-container */
 .error-container {
-    height: 1.4rem;
+    height: var(--font-size-small);
     margin-top: var(--margin-xxxsmall);
     color: var(--error-500);
     font-size: var(--font-size-xxsmall);

@@ -70,10 +70,10 @@ const view = {
 
         // validate quantity input
         if(quantityInput.value.trim() === "" || quantityInput.validity.rangeUnderflow) {
-            this.validateInput(quantityInput, "! Value must be greater than 0");
+            this.validateInput(quantityInput, "! Value must be > than 0");
         } 
         else if (quantityInput.validity.rangeOverflow) {
-            this.validateInput(quantityInput, "! Value must be less than 9999");
+            this.validateInput(quantityInput, "! Value must be < than 9999");
         }
         else {
             console.log("Input is valid");

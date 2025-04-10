@@ -1,7 +1,10 @@
 .sidebar-container {
     background-color: var(--gray-200);
     padding: var(--padding-medium) var(--padding-medium);
-
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .sidebar-introText {
