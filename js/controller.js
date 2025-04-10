@@ -86,6 +86,7 @@ const controller = {
         model.addItemObjToDataListOfItems(item);
         this.setLocalStorageFromModelData();
         view.renderList([item]);
+        view.clearFormInputs();
     }
 
 }

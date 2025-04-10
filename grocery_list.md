@@ -147,3 +147,9 @@ Currently the application has been designed with a mobile first approach. The la
 - give the html a footer to complete the boilerplate
 - create a mediaQueries.css file or create media queries in the relevant css files
 - use the body to set a grid and manipulate the sections accordingly
+
+## Clean up
+- clear form when list item is submitted and valid
+- swap delete button out for trash can icon
+- delete console.logs
+- delete empty css declarations

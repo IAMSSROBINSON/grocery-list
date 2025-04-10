@@ -106,9 +106,12 @@ const view = {
         input.nextElementSibling.textContent = message;
         input.classList.remove("validInput");
         input.classList.add("invalidInput");
+    },
+    clearFormInputs () {
+        this.nameInput.value = "";
+        this.quantityInput.value = "";
+        this.unitListInput.value = "";
     }
-
-    
 }
 
 export default view;
