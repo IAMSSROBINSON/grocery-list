@@ -21,6 +21,7 @@ const controller = {
     } else {
       localStorage.setItem("groceryListAppData", JSON.stringify(data));
       model.setNewAppData(data);
+      this.setLocalStorageFromModelData();
     }
   },
   handleDelete(e) {
