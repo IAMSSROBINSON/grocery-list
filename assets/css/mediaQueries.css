@@ -27,3 +27,63 @@
         grid-row: 2 / 3;
     }
 }
+
+@media screen and (min-width: 769px) {
+    body {
+        display: grid;
+        grid-template-columns: minmax(200px, 300px) 1fr !important;
+        grid-template-rows: auto auto 1fr auto;
+    }
+
+    .header {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .sidebar-container {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        background-color: var(--gray-200);
+        margin-top: 0;
+        padding-top: var(--padding-xxxlarge);
+        height: calc(100vh - 87px);
+    }
+
+    .main-content-container {
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
+        margin-top: 0;
+    }
+
+    .addToListForm {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .name-input-container {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .quantity-input-container {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+
+    .unit-list-input-container {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+
+    .addToList-button {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+        align-self: flex-start;
+    }
+    
+    .footer {
+        display: none;
+    }
+    
+    
+}
