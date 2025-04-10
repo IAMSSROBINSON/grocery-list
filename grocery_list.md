@@ -141,3 +141,9 @@ The inputs are now validated and the user clicks the 'Add To List +' button for 
 - push to data.itemsList
 - update localStorage
 - generate new ListItem component and append to the list container in the UI through view
+
+## Responsive layout
+Currently the application has been designed with a mobile first approach. The layout should work regardless of which device a user views it on. The layout should be responsive inline with the mock ups for mobile, tablet and desktop devices. 
+- give the html a footer to complete the boilerplate
+- create a mediaQueries.css file or create media queries in the relevant css files
+- use the body to set a grid and manipulate the sections accordingly

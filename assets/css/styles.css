@@ -127,3 +127,9 @@ img, video, iframe, embed, object {
 img, video {
     object-fit: cover;
 }
+
+.footer {
+    text-align: center;
+    padding: var(--padding-medium) var(--padding-medium);
+
+}
