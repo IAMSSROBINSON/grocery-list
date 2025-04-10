@@ -1,8 +1,8 @@
 .main-content-container {
     padding: var(--padding-medium) var(--padding-medium);
     margin-top: var(--margin-xxlarge);
-    max-width: var(--max-width-medium);
-    margin: 0 auto;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
 }
 
 .main-content-header-container {

@@ -81,6 +81,8 @@
     /* border-radius */
     --border-radius-small: 4px;
 
+    /* letter-spacing */
+    --letter-spacing-small: 0.2px;
 
     /* line-height */
     --line-height-small: 1.2;
@@ -113,6 +115,9 @@ body {
     width: 100%;
     height: 100vh;
     background-color: var(--gray-100);
+    display: grid;
+    grid-template-columns: auto minmax(auto, 600px) auto;
+    grid-template-rows: auto auto 1fr auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -133,5 +138,9 @@ img, video {
 .footer {
     text-align: center;
     padding: var(--padding-medium) var(--padding-medium);
+    color: var(--gray-500);
+    /* background-color: dodgerblue; */
 
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
 }
