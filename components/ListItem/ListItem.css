@@ -21,6 +21,9 @@
     font-size: var(--font-size-small);
     grid-column: 2 / 3;
     grid-row: 1 / -1;
+    max-inline-size: 19ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .list-item-quantity {
